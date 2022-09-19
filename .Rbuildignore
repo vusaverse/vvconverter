@@ -1,0 +1,5 @@
+^vvconverter\.Rproj$
+^\.Rproj\.user$
+^build vvconverter.R
+^LICENSE\.md$
+^install_local_packages.R
