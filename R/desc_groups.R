@@ -14,7 +14,7 @@
 #' # using the max as the grouping function
 #' desc_groups(data=mtcars, group_var="gear", group_func=max)
 #' @return grouped data frame
-#' @importFrom dplyr mutate_each_ summarise_each_ group_by_ funs select summarise_each
+#' @importFrom dplyr mutate_each_ summarise_each_ group_by_ funs select summarise_each %>%
 #' @export
 desc_groups <- function(data, group_var, group_func=mean, add_all_data_row=T)
 {
@@ -68,7 +68,7 @@ desc_groups <- function(data, group_var, group_func=mean, add_all_data_row=T)
 #' # using the max as the grouping function
 #' desc_groups_rank(data=mtcars, group_var="gear", group_func=max)
 #' @return grouped data frame, showing the rank instead of the absolute values/
-#' @importFrom dplyr dense_rank desc
+#' @importFrom dplyr dense_rank desc %>%
 #' @export
 desc_groups_rank <- function(data, group_var, group_func=mean)
 {
