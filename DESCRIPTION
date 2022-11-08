@@ -1,10 +1,7 @@
 Package: vvconverter
 Title: Apply Transformations To Data
 Version: 0.5.3.9000
-Authors@R: c(
-    person("Hadley", "Wickham", email = "hadley@rstudio.com", role = "cre"),
-    person("Winston", "Chang", email = "winston@rstudio.com", role = "aut"),
-    person("RStudio", role = c("cph", "fnd")))
+Authors@R: person("Tomer", "Iwan", , "t.iwan@vu.nl", role = c("aut", "cre", "cph"))
 Description: This package provides numerous transformations to data.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -13,7 +10,8 @@ RoxygenNote: 7.2.1
 Imports: 
     dplyr,
     lubridate,
-    stringr,
+    stringr
+Suggests:
     vvsculptor
 Remotes:
     vusaverse/vvsculptor
