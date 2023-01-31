@@ -12,6 +12,9 @@
 #' returned.
 #' @family vector calculations
 #' @family booleans
+#' @examples
+#' vector <- c(0, 1, 0, 1, 1, 1, 0)
+#' transform_01_to_ft(vector)
 #' @export
 transform_01_to_ft <- function(x) {
   ## Check if this vector is a 0/1 variable converted to T/F
@@ -47,6 +50,9 @@ transform_01_to_ft <- function(x) {
 #' @return A TRUE/FALSE value on the test
 #' @family tests
 #' @family booleans
+#' @examples
+#' vector <- c(0, 1, 0, 1, 1, 1, 0)
+#' test_01(vector)
 #' @export
 test_01 <- function(x) {
   ## First determine the class of x. Depending on that, another test

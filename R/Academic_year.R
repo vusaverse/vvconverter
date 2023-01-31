@@ -8,9 +8,12 @@
 #' @param start_1_oct Does the academic year start on the 1st of October? default FALSE:
 #' based on September 1st
 #' @return The academic year in which the specified date falls
+#' @examples
+#' academic_year(lubridate::today())
+#'
 #' @family vector calculations
 #' @export
-academic_year <- function(x, start_1_oct = F){
+academic_year <- function(x, start_1_oct = FALSE){
 
   ## Convert POSIXct and POSIXt to date class
   if (any(class(x) %in% c("POSIXct", "POSIXt"))) {

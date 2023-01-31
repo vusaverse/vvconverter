@@ -4,6 +4,9 @@
 #'
 #' @param x A text string.
 #' @return Cleaned string.
+#' @examples
+#' trim(" hello ")
+#'
 #' @export
 trim  <- function (x) gsub("^\\s+|\\s+$", "", x)
 
@@ -12,6 +15,8 @@ trim  <- function (x) gsub("^\\s+|\\s+$", "", x)
 #' Trim leading whitespace from sting.
 #' @param x A text string.
 #' @return Cleaned string.
+#' @examples
+#' trim(" hello")
 #' @export
 ltrim <- function (x) gsub("^\\s+", "", x)
 
@@ -20,5 +25,7 @@ ltrim <- function (x) gsub("^\\s+", "", x)
 #' Trim trailing whitespaces from string.
 #' @param x A text string.
 #' @return Cleaned string.
+#' @examples
+#' trim("hello ")
 #' @export
 rtrim <- function (x) gsub("\\s+$", "", x)

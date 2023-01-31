@@ -15,3 +15,7 @@ Cleaned string.
 \description{
 Trim both leading and trailing whitespaces from string.
 }
+\examples{
+trim(" hello ")
+
+}

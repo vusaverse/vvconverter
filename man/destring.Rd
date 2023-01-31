@@ -19,4 +19,9 @@ vector of type numeric
 \description{
 Convert character vector to numeric, ignoring irrelevant characters.
 }
+\examples{
+destring("24k")
+destring("5,5")
+
+}
 \concept{vector berekeningen}

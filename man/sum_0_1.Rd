@@ -21,7 +21,6 @@ Other vector calculations:
 \code{\link{academic_year}()},
 \code{\link{clean_multiple_underscores}()},
 \code{\link{interval_round}()},
-\code{\link{t_f_maker}()},
 \code{\link{transform_01_to_ft}()}
 }
 \concept{vector calculations}

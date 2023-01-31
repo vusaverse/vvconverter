@@ -1,32 +1,3 @@
-## ++++++++++++++++++++++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-## Mode.R ####
-## ++++++++++++++++++++++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-## R code for Student Analytics VU University Amsterdam
-## Copyright 2022 VU
-## Web Page: http://www.vu.nl
-## Contact: vu-analytics@vu.nl
-## Distribution outside the VU: Yes
-##
-## Purpose: Calculate the mode of a vector
-##
-## Dependencies: Dependency
-##
-## Datasets: Datasets
-##
-## Comments:
-## 1) None.
-## 2) ___
-##
-## ++++++++++++++++++++++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++++++++++++++++++++++
-## TODO:
-##1) ___.
-##
-## ++++++++++++++++++++++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++++++++++++++++++++++
-## History:
-## 26-07-2022: TK: Create file
-## ++++++++++++++++++++++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
 #' Mode (most common value)
 #'
 #' Determine the most common value in a vector. If two values have the same frequency,
@@ -34,10 +5,13 @@
 #'
 #' @param x a vector
 #' @param na.rm If TRUE: Remove nas before the calculation is done
+#' @examples
+#' mode(c(0,3,5,7,5,3,2))
+#'
 #'
 #' @return the most common value in the vector x
 #' @export
-mode <- function(x, na.rm = F) {
+mode <- function(x, na.rm = FALSE) {
   if (na.rm) {
     x <- x[!is.na(x)]
   }

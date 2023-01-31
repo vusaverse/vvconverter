@@ -15,12 +15,15 @@ cleaned vector or string.
 \description{
 Replaces multiple underscores into a single underscore in a vector or string.
 }
+\examples{
+clean_multiple_underscores("hello___world")
+
+}
 \seealso{
 Other vector calculations: 
 \code{\link{academic_year}()},
 \code{\link{interval_round}()},
 \code{\link{sum_0_1}()},
-\code{\link{t_f_maker}()},
 \code{\link{transform_01_to_ft}()}
 }
 \concept{vector calculations}

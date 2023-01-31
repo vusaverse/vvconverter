@@ -2,32 +2,30 @@
 % Please edit documentation in R/str_replace_all_in_file.R
 \name{str_replace_all_in_file}
 \alias{str_replace_all_in_file}
-\title{Vervang alles in een bestand}
+\title{Replace all occurences of a pattern in a file}
 \usage{
 str_replace_all_in_file(
   file,
   pattern,
   replacement = "[...]",
-  alleen_comments = TRUE,
+  only_comments = TRUE,
   collapse = FALSE
 )
 }
 \arguments{
-\item{file}{Het bestandspad van het script}
+\item{file}{character, path of file to be modified}
 
-\item{pattern}{De reguliere expressie waarop gematcht wordt}
+\item{pattern}{character, pattern to be replaced}
 
-\item{replacement}{Een character string die in de plaats van de match komt}
+\item{replacement}{character, replacement text}
 
-\item{alleen_comments}{TRUE: Doorzoek alleen regels die beginnen met (eventueel
-spaties en een "#". Dit werkt alleen als collapse == FALSE}
+\item{only_comments}{logical, should the replacement only be done in comments}
 
-\item{collapse}{FALSE (standaard): Iedere regel wordt één voor één doorzocht.
-Als TRUE wordt alle tekst in één keer doorzocht, hierbij wordt een nieuwe regel
-aangegeven met "\\n". Zo is het mogelijk om reguliere expressies over meerdere
-regels heen te detecteren. (alleen_comments werkt niet als collapse op TRUE staat)}
+\item{collapse}{logical, should the lines be collapsed into a single line before replacement}
+}
+\value{
+NULL, the file is modified in place
 }
 \description{
-Vervang alle matches op een reguliere expressie in een bestand. Hiermee kunnen
-wijzigingen in scripts op grote schaal doorgevoerd worden.
+Replace all occurences of a pattern in a file
 }

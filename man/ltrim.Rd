@@ -15,3 +15,6 @@ Cleaned string.
 \description{
 Trim leading whitespace from sting.
 }
+\examples{
+trim(" hello")
+}

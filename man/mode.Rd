@@ -4,7 +4,7 @@
 \alias{mode}
 \title{Mode (most common value)}
 \usage{
-mode(x, na.rm = F)
+mode(x, na.rm = FALSE)
 }
 \arguments{
 \item{x}{a vector}
@@ -17,4 +17,9 @@ the most common value in the vector x
 \description{
 Determine the most common value in a vector. If two values have the same frequency,
 the first occurring value is used.
+}
+\examples{
+mode(c(0,3,5,7,5,3,2))
+
+
 }

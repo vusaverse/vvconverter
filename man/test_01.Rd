@@ -21,9 +21,12 @@ to be.
 If there is a 0/1 variable, TRUE is returned, in all others
 cases FALSE.
 }
+\examples{
+vector <- c(0, 1, 0, 1, 1, 1, 0)
+test_01(vector)
+}
 \seealso{
 Other booleans: 
-\code{\link{t_f_maker}()},
 \code{\link{transform_01_to_ft}()}
 }
 \concept{booleans}

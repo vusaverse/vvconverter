@@ -4,7 +4,7 @@
 \alias{academic_year}
 \title{Academic year}
 \usage{
-academic_year(x, start_1_oct = F)
+academic_year(x, start_1_oct = FALSE)
 }
 \arguments{
 \item{x}{A date, or vector with multiple dates. POSIXct is also accepted.}
@@ -20,12 +20,15 @@ In this function, a date is translated to the academic year in which it
 falls. This is based on a start of the academic year on the
 1st of September.
 }
+\examples{
+academic_year(lubridate::today())
+
+}
 \seealso{
 Other vector calculations: 
 \code{\link{clean_multiple_underscores}()},
 \code{\link{interval_round}()},
 \code{\link{sum_0_1}()},
-\code{\link{t_f_maker}()},
 \code{\link{transform_01_to_ft}()}
 }
 \concept{vector calculations}

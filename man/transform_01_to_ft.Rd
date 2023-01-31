@@ -21,16 +21,18 @@ the vector contains only values 0, 1, or NA. If this is not the case
 returns the original variable.
 This transformation can be done on numeric, string, and factor vectors.
 }
+\examples{
+vector <- c(0, 1, 0, 1, 1, 1, 0)
+transform_01_to_ft(vector)
+}
 \seealso{
 Other vector calculations: 
 \code{\link{academic_year}()},
 \code{\link{clean_multiple_underscores}()},
 \code{\link{interval_round}()},
-\code{\link{sum_0_1}()},
-\code{\link{t_f_maker}()}
+\code{\link{sum_0_1}()}
 
 Other booleans: 
-\code{\link{t_f_maker}()},
 \code{\link{test_01}()}
 }
 \concept{booleans}

@@ -3,6 +3,9 @@
 #' Replaces multiple underscores into a single underscore in a vector or string.
 #' @param x The vector or string to be cleaned.
 #' @return cleaned vector or string.
+#' @examples
+#' clean_multiple_underscores("hello___world")
+#'
 #' @family vector calculations
 #' @export
 clean_multiple_underscores <- function(x) {
