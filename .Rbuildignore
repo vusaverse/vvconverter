@@ -3,3 +3,4 @@
 ^build vvconverter.R
 ^LICENSE\.md$
 ^install_local_packages.R
+^\.github$
