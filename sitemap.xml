@@ -25,6 +25,12 @@
     <loc>/reference/destring.html</loc>
   </url>
   <url>
+    <loc>/reference/group_summary.html</loc>
+  </url>
+  <url>
+    <loc>/reference/group_summary_rank.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
@@ -40,6 +46,12 @@
     <loc>/reference/mode.html</loc>
   </url>
   <url>
+    <loc>/reference/month_name.html</loc>
+  </url>
+  <url>
+    <loc>/reference/pipe.html</loc>
+  </url>
+  <url>
     <loc>/reference/rtrim.html</loc>
   </url>
   <url>
@@ -52,7 +64,16 @@
     <loc>/reference/test_01.html</loc>
   </url>
   <url>
+    <loc>/reference/test_yes_no.html</loc>
+  </url>
+  <url>
     <loc>/reference/transform_01_to_ft.html</loc>
+  </url>
+  <url>
+    <loc>/reference/transform_logical_yes_no.html</loc>
+  </url>
+  <url>
+    <loc>/reference/translate_yes_no.html</loc>
   </url>
   <url>
     <loc>/reference/trim.html</loc>
