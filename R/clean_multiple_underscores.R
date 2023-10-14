@@ -9,14 +9,14 @@
 #' @family vector calculations
 #' @export
 clean_multiple_underscores <- function(x) {
-    if (any(grepl("__", x))) {
-        x <- gsub("__", "_", x)
-    }
+  if (any(grepl("__", x))) {
+    x <- gsub("__", "_", x)
+  }
 
-    if (any(grepl("__", x))) {
-        ## apply recursion if there still are multiple underscores in sequence
-        x <- clean_multiple_underscores(x)
-    }
+  if (any(grepl("__", x))) {
+    ## apply recursion if there still are multiple underscores in sequence
+    x <- clean_multiple_underscores(x)
+  }
 
-    return(x)
+  return(x)
 }

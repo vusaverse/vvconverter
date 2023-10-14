@@ -20,5 +20,4 @@ Calculate the median of the top ten percentage of the values.
 \examples{
 median_top_10(mtcars$cyl)
 
-
 }

@@ -19,13 +19,14 @@ Function to round numeric values in a vector to values from
 an interval sequence.
 }
 \examples{
-interval_round(c(5,4,2,6), interval = seq(1:4))
+interval_round(c(5, 4, 2, 6), interval = seq(1:4))
 
 }
 \seealso{
 Other vector calculations: 
 \code{\link{academic_year}()},
 \code{\link{clean_multiple_underscores}()},
+\code{\link{month_name}()},
 \code{\link{sum_0_1}()},
 \code{\link{transform_01_to_ft}()}
 }

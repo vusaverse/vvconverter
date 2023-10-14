@@ -6,8 +6,7 @@
 #' @param x a vector
 #' @param na.rm If TRUE: Remove nas before the calculation is done
 #' @examples
-#' mode(c(0,3,5,7,5,3,2))
-#'
+#' mode(c(0, 3, 5, 7, 5, 3, 2))
 #'
 #' @return the most common value in the vector x
 #' @export

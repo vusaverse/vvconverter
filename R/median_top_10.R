@@ -7,7 +7,6 @@
 #' @examples
 #' median_top_10(mtcars$cyl)
 #'
-#'
 #' @return A numerical value
 #' @export
 median_top_10 <- function(x, na.rm = FALSE) {

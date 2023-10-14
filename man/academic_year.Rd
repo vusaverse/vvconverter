@@ -28,6 +28,7 @@ academic_year(lubridate::today())
 Other vector calculations: 
 \code{\link{clean_multiple_underscores}()},
 \code{\link{interval_round}()},
+\code{\link{month_name}()},
 \code{\link{sum_0_1}()},
 \code{\link{transform_01_to_ft}()}
 }

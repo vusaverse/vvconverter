@@ -8,7 +8,7 @@
 #' trim(" hello ")
 #'
 #' @export
-trim  <- function (x) gsub("^\\s+|\\s+$", "", x)
+trim <- function(x) gsub("^\\s+|\\s+$", "", x)
 
 #' LTrim
 #'
@@ -18,7 +18,7 @@ trim  <- function (x) gsub("^\\s+|\\s+$", "", x)
 #' @examples
 #' trim(" hello")
 #' @export
-ltrim <- function (x) gsub("^\\s+", "", x)
+ltrim <- function(x) gsub("^\\s+", "", x)
 
 #' RTrim
 #'
@@ -28,4 +28,4 @@ ltrim <- function (x) gsub("^\\s+", "", x)
 #' @examples
 #' trim("hello ")
 #' @export
-rtrim <- function (x) gsub("\\s+$", "", x)
+rtrim <- function(x) gsub("\\s+$", "", x)

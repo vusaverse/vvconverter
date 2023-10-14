@@ -9,25 +9,23 @@
 #' @export
 #'
 str_replace_all_in_file <- function(file, pattern, replacement = "[...]", only_comments = TRUE, collapse = FALSE) {
+  Lines <- readLines(file)
 
-    Lines <- readLines(file)
-
-    if (!collapse) {
-        if (only_comments) {
-            Search_line <- stringr::str_detect(Lines, "^\\s*#")
-        } else {
-            Search_line <- T
-        }
-
-        Lines[Search_line] <- stringr::str_replace_all(Lines[Search_line], pattern = pattern, replacement = replacement)
-
-        cat(Lines, file = file, sep = "\n")
+  if (!collapse) {
+    if (only_comments) {
+      Search_line <- stringr::str_detect(Lines, "^\\s*#")
     } else {
-        Lines_collapsed <- paste(c(Lines, ""), collapse = "\n")
-
-        Lines_collapsed <- stringr::str_replace_all(Lines_collapsed, pattern = pattern, replacement = replacement)
-
-        cat(Lines_collapsed, file = file)
+      Search_line <- T
     }
 
+    Lines[Search_line] <- stringr::str_replace_all(Lines[Search_line], pattern = pattern, replacement = replacement)
+
+    cat(Lines, file = file, sep = "\n")
+  } else {
+    Lines_collapsed <- paste(c(Lines, ""), collapse = "\n")
+
+    Lines_collapsed <- stringr::str_replace_all(Lines_collapsed, pattern = pattern, replacement = replacement)
+
+    cat(Lines_collapsed, file = file)
+  }
 }

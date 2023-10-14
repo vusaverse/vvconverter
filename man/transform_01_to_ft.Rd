@@ -30,6 +30,7 @@ Other vector calculations:
 \code{\link{academic_year}()},
 \code{\link{clean_multiple_underscores}()},
 \code{\link{interval_round}()},
+\code{\link{month_name}()},
 \code{\link{sum_0_1}()}
 
 Other booleans: 

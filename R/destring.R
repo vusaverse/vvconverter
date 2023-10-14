@@ -11,6 +11,6 @@
 #' @return vector of type numeric
 #' @family vector berekeningen
 #' @export destring
-destring <- function(x, keep="0-9.-") {
-    return(as.numeric(gsub(paste("[^", keep, "]+", sep = ""), "", x)) )
+destring <- function(x, keep = "0-9.-") {
+  return(as.numeric(gsub(paste("[^", keep, "]+", sep = ""), "", x)))
 }

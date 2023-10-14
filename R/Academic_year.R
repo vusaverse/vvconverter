@@ -13,8 +13,7 @@
 #'
 #' @family vector calculations
 #' @export
-academic_year <- function(x, start_1_oct = FALSE){
-
+academic_year <- function(x, start_1_oct = FALSE) {
   ## Convert POSIXct and POSIXt to date class
   if (any(class(x) %in% c("POSIXct", "POSIXt"))) {
     x <- lubridate::as_date(x)
@@ -30,19 +29,20 @@ academic_year <- function(x, start_1_oct = FALSE){
   ## The NA values that cannot be converted to dates should remain NA. Hence
   ## the 'suppressWarnings()
   if (start_1_oct) {
-    acad_year_start <- suppressWarnings(lubridate::dmy(paste("01-10",calendar_year, sep = "-")))
-    acad_year_end <- suppressWarnings(lubridate::dmy(paste("01-10",calendar_year + 1, sep = "-")))
+    acad_year_start <- suppressWarnings(lubridate::dmy(paste("01-10", calendar_year, sep = "-")))
+    acad_year_end <- suppressWarnings(lubridate::dmy(paste("01-10", calendar_year + 1, sep = "-")))
   } else {
-    acad_year_start <- suppressWarnings(lubridate::dmy(paste("01-09",calendar_year, sep = "-")))
-    acad_year_end <- suppressWarnings(lubridate::dmy(paste("01-09",calendar_year + 1, sep = "-")))
+    acad_year_start <- suppressWarnings(lubridate::dmy(paste("01-09", calendar_year, sep = "-")))
+    acad_year_end <- suppressWarnings(lubridate::dmy(paste("01-09", calendar_year + 1, sep = "-")))
   }
 
   ## If the specified date falls on or after the start of the academic year,
   ## returned the calendar year
   ## If the specified date falls before the start of the academic year,
   ## it to the previous calendar year: so calendar_year - 1
-  x <- dplyr::case_when(x >= acad_year_start ~ calendar_year,
-                        x < acad_year_end ~ calendar_year - 1)
+  x <- dplyr::case_when(
+    x >= acad_year_start ~ calendar_year,
+    x < acad_year_end ~ calendar_year - 1
+  )
   return(x)
-
 }

@@ -19,7 +19,6 @@ Determine the most common value in a vector. If two values have the same frequen
 the first occurring value is used.
 }
 \examples{
-mode(c(0,3,5,7,5,3,2))
-
+mode(c(0, 3, 5, 7, 5, 3, 2))
 
 }

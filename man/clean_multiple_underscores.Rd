@@ -23,6 +23,7 @@ clean_multiple_underscores("hello___world")
 Other vector calculations: 
 \code{\link{academic_year}()},
 \code{\link{interval_round}()},
+\code{\link{month_name}()},
 \code{\link{sum_0_1}()},
 \code{\link{transform_01_to_ft}()}
 }
