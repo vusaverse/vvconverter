@@ -6,4 +6,10 @@
   <!-- badges: end -->
 
 
-# 
+
+`vvconverter` is an R package that provides a set of functions for data transformations. The transformations are performed on character and numeric data. The functions are particularly focused around the academic year, reflecting the package's scope within Student Analytics.
+
+
+## Contribution Guidelines
+
+Contributions to `vvconverter` are welcome. The standard GitHub process should be followed for contributing: fork the repository, make changes, and submit a pull request.
