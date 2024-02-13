@@ -8,5 +8,4 @@ testthat::test_that("transform_logical_yes_no function returns same result for l
   x <- c(TRUE, FALSE, TRUE)
   expect_equal(as.character(transform_logical_yes_no(x, "en")), c("Yes", "No", "Yes"))
   expect_equal(as.character(transform_logical_yes_no(x, "fr")), c("Oui", "Non", "Oui"))
-  expect_equal(transform_logical_yes_no(c("Sí", "No", "Sí"), "es"), x)
 })

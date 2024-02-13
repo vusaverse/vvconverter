@@ -1,6 +1,6 @@
 Package: vvconverter
 Title: Apply Transformations to Data
-Version: 0.5.8.9000
+Version: 0.5.9
 Authors@R: person("Tomer", "Iwan", , "t.iwan@vu.nl", role = c("aut", "cre", "cph"))
 Description: Provides a set of functions for data transformations.
     Transformations are performed on character and numeric data. As the scope of the package is
@@ -8,7 +8,7 @@ Description: Provides a set of functions for data transformations.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Imports: 
     checkmate,
     dplyr,
