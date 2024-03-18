@@ -4,3 +4,4 @@
 ^LICENSE\.md$
 ^install_local_packages.R
 ^\.github$
+^codecov\.yml$
