@@ -1,9 +1,9 @@
 # Test translate_yes_no function
 testthat::test_that("translate_yes_no function works correctly", {
-  expect_equal(tolower(translate_yes_no("yes")), "yes")
-  expect_equal(tolower(translate_yes_no("no")), "no")
-  expect_equal(tolower(translate_yes_no("ja")), "yes")
-  expect_equal(tolower(translate_yes_no("nee")), "no")
+  expect_equal(tolower(translate_yes_no("yes", source_language = "en")), "yes")
+  expect_equal(tolower(translate_yes_no("no", source_language = "en")), "no")
+  expect_equal(tolower(translate_yes_no("ja", source_language = "nl")), "yes")
+  expect_equal(tolower(translate_yes_no("nee", source_language = "nl")), "no")
 })
 
 
