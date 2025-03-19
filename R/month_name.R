@@ -26,7 +26,15 @@ month_name <- function(month_numeric, lang = "nl") {
     "December"
   )
   ## Translate the month names to the specified language
-  months <- polyglotr::google_translate(months, target_language = lang)
+  months <- tryCatch({
+    polyglotr::google_translate(months, target_language = lang)
+  }, error = function(e) {
+    message("Translation service is currently unavailable or has changed. Please try again later.")
+    return(NULL) # Return NULL if translation fails
+  })
+  if (is.null(months)) {
+    return(NULL)
+  }
   ## Return the correct month
   months[month_numeric]
 }

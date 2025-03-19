@@ -11,10 +11,26 @@ transform_logical_yes_no <- function(x, lang = "nl") {
     y <- as.character(x)
     y[x] <- "Yes"
     y[!x] <- "No"
-    y <- polyglotr::google_translate(y, target_language = lang)
+    y <- tryCatch({
+      polyglotr::google_translate(y, target_language = lang)
+    }, error = function(e) {
+      message("Translation service is currently unavailable or has changed. Please try again later.")
+      return(NULL) # Return NULL if translation fails
+    })
+    if (is.null(y)) {
+      return(NULL)
+    }
   } else if (is.character(x) | is.factor(x)) {
     y <- tolower(trimws(x))
-    y <- polyglotr::google_translate(y, source_language = lang, target_language = "en")
+    y <- tryCatch({
+      polyglotr::google_translate(y, source_language = lang, target_language = "en")
+    }, error = function(e) {
+      message("Translation service is currently unavailable or has changed. Please try again later.")
+      return(NULL) # Return NULL if translation fails
+    })
+    if (is.null(y)) {
+      return(NULL)
+    }
     y <- y == "yes" | y == "y" | y == "Yes"
   } else {
     stop("Invalid input. Please provide a logical or character/factor vector.")

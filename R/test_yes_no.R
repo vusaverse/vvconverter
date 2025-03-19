@@ -8,7 +8,12 @@
 #' @export
 translate_yes_no <- function(responses, source_language = "nl") {
   if (is.character(responses) | is.factor(responses)) {
-    return(polyglotr::google_translate(responses, source_language = source_language, target_language = "en"))
+    return(tryCatch({
+      polyglotr::google_translate(responses, source_language = source_language, target_language = "en")
+    }, error = function(e) {
+      message("Translation service is currently unavailable or has changed. Please try again later.")
+      return(NULL) # Return NULL if translation fails
+    }))
   } else {
     return(FALSE)
   }
